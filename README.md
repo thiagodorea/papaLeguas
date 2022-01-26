@@ -1,4 +1,4 @@
-<h1 align="center">:movie_camera:  Papa-Léguas</h1>
+<h1 align="center">:truck: Papa-Léguas</h1>
 
 <div align="center">
 <img style="display: block; margin: auto;" alt="versão" src="https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue?style=plastic&logo=exercism">
@@ -110,5 +110,5 @@ npm install -g heroku
 
 
 <p align="right">
-  :small_red_triangle: <a href="#movie_camera-Papa-L%C3%A9guas">Voltar ao topo</a>
+  :small_red_triangle: <a href="#truck-Papa-L%C3%A9guas">Voltar ao topo</a>
 </p>
