@@ -1,0 +1,59 @@
+<div class="container">
+  <h3 class="fs-4 py-3">Encomenda: <span class="badge bg-secondary">EC0{{pedido?.id }}</span></h3>
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="main-timeline4">
+
+        <div class="timeline">
+          <a class="timeline-content">
+            <span class="year">
+              <fa-icon [icon]="icons[0]"></fa-icon>
+            </span>
+            <div class="inner-content">
+              <h3 class="title">Postado:<br> <small>{{ pedido?.postagem | date :'dd/MM/yyyy h:mm:ss' }}</small></h3>
+              <p class="description">
+                O pedido foi postado. </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="timeline">
+          <a class="timeline-content">
+            <span class="year">
+              <fa-icon [icon]="icons[1]"></fa-icon>
+            </span>
+            <div class="inner-content">
+              <h3 class="title">Transporte:<br><small>{{ pedido?.transporte  | date :'dd/MM/yyyy h:mm:ss' }}</small>
+              </h3>
+              <p class="description">
+                {{  pedido?.transporte? ' Pedido em rota de entrega. ' : 'Pedido não foi para o transporte' }}
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="timeline">
+          <a class="timeline-content">
+            <span class="year">
+              <fa-icon [icon]="!pedido?.entrega? icons[3]:icons[2]"></fa-icon>
+            </span>
+            <div class="inner-content">
+              <h3 class="title"><small>{{ !pedido?.entrega? 'Entrega não realizada' : 'Entregue:' }}</small></h3>
+              <h3 class="title"><small>{{ pedido?.entrega  | date :'dd/MM/yyyy h:mm:ss' }}</small></h3>
+              <p class="description">
+                {{ pedido?.observacao? pedido?.observacao : 'sem observação'}}
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row fs-3 float">
+  <a routerLink="/rastreio">
+    <fa-icon [icon]="icons[4]"></fa-icon> Voltar
+  </a>
+</div>
