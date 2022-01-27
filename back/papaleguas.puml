@@ -1,0 +1,26 @@
+@startuml
+class com.tdorea.papaleguas.domain.Pedido {
+- {static} long serialVersionUID
+- Long id
+- Date postagem
+- Date transporte
+- Date entrega
+- String observacao
+- Cliente cliente
+}
+class com.tdorea.papaleguas.domain.Cliente {
+- {static} long serialVersionUID
+- Long id
+- String nome
+- String telefone
+- String cpf
+- String endereco
+- String bairro
+- String cep
+- String estado
+- String cidade
+- Integer numero
+- Set<Pedido> pedido
+}
+
+@enduml

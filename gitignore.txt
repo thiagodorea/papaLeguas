@@ -1,0 +1,29 @@
+# Gradle
+build
+.gradle
+.gradletasknamecache
+
+# Eclipse
+bin
+.classpath
+.project
+.settings
+.metadata
+.springBeans
+.launch
+
+# IDEA
+.idea
+*.ipr
+*.iws
+*.iml
+out
+
+# Misc
+test-output
+logs
+.DS_Store
+*-BAK
+/.metadata
+/.recommenders
+Dockerfile
