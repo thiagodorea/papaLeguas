@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "front": {
+    "papaleguas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "front:build"
+            "browserTarget": "papaleguas:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "front:build:production"
+              "browserTarget": "papaleguas:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "front:build"
+            "browserTarget": "papaleguas:build"
           }
         },
         "test": {
@@ -119,18 +119,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "front:serve"
+            "devServerTarget": "papaleguas:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "front:serve:production"
+              "devServerTarget": "papaleguas:serve:production"
             }
           }
         },
         "deploy": {
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
-            "outputPath": "dist/front",
+            "outputPath": "dist/papaleguas",
             "netlifyToken": "",
             "siteId": "eac2ebf7-07df-4375-b5cd-f21de24f4027"
           }
@@ -138,7 +138,7 @@
       }
     }
   },
-  "defaultProject": "front",
+  "defaultProject": "papaleguas",
   "cli": {
     "analytics": false
   }

@@ -12,7 +12,6 @@ export class RastreioService {
   constructor(private http: HttpClient) { }
 
   getEncomendaRastreio(codigo: string): Observable<any> {
-    console.log(this.API_URL + `/pedido/` + codigo)
     return this.http.get(this.API_URL + `/pedido/` + codigo);
   }
 }
